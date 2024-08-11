@@ -63,3 +63,10 @@ for (let i = 0; i < 5; i++) {
     console.log('----------------------------------------');
 }
 
+if (humanScore > computerScore) {
+  alert("Congratulations! You won the game with a score of " + humanScore + " to " + computerScore);
+} else if (humanScore < computerScore) {
+  alert("You lost the game. The computer won with a score of " + computerScore + " to " + humanScore);
+} else {
+  alert("It's a tie! Both you and the computer scored " + humanScore);
+}
