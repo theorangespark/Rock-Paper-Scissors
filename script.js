@@ -65,8 +65,12 @@ for (let i = 0; i < 5; i++) {
 
 if (humanScore > computerScore) {
   alert("Congratulations! You won the game with a score of " + humanScore + " to " + computerScore);
+  const winGif = document.createElement('img');
+  winGif.src = 'pic/win.gif';
+  winGif.alt = 'You Win!';
 } else if (humanScore < computerScore) {
   alert("You lost the game. The computer won with a score of " + computerScore + " to " + humanScore);
 } else {
   alert("It's a tie! Both you and the computer scored " + humanScore);
 }
+
