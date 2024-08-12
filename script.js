@@ -55,12 +55,11 @@ for (let i = 0; i < 5; i++) {
     }
     const computerSelection = getComputerChoice();
     const result = playRound(humanSelection, computerSelection);
-    console.log(`Round ${i + 1}:`);
-    console.log(`You chose: ${humanSelection}`);
-    console.log(`Computer chose: ${computerSelection}`);
-    console.log(result);
-    console.log(`Scores - Human: ${humanScore}, Computer: ${computerScore}`);
-    console.log('----------------------------------------');
+    alert(`Round ${i + 1}:`);
+    alert(`You chose: ${humanSelection}`);
+    alert(`Computer chose: ${computerSelection}`);
+    alert(result);
+    alert(`Scores - Human: ${humanScore}, Computer: ${computerScore}`);
 }
 
 if (humanScore > computerScore) {
